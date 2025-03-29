@@ -3,7 +3,7 @@ from flask_jwt_extended import JWTManager, create_access_token
 from datetime import timedelta
 
 app = Flask(__name__)
-app.config["JWT_SECRET_KEY"] = "secret_key"  
+app.config["JWT_SECRET_KEY"] = "panconwebito"  
 app.config["JWT_ACCESS_TOKEN_EXPIRES"] = timedelta(minutes=30)
 
 jwt = JWTManager(app)
